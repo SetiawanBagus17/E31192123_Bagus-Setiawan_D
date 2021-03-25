@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Praktikum 2</string>
+    <string name="email">Masukkan Email</string>
+    <string name="password">Masukkan Password</string>
+</resources>
