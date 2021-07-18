@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kospolijejember">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:name="com.example.kospolijejember.server.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name="com.example.kospolijejember.EditProfile"></activity>
+        <activity android:name="com.example.kospolijejember.dialog.GaleryDialog" />
+        <activity android:name="com.example.kospolijejember.dialog.CameraDialog" />
+        <activity android:name="com.example.kospolijejember.dialog.GaleryActivity" />
+        <activity android:name="com.example.kospolijejember.dialog.CameraActivity" />
+        <activity android:name="com.example.kospolijejember.ResultKost" />
+        <activity android:name="com.example.kospolijejember.ResultKos" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name="com.example.kospolijejember.MapsKost"
+            android:label="@string/title_activity_maps_kost" />
+        <activity android:name="com.example.kospolijejember.Detailkamar_activity" />
+        <activity android:name="com.example.kospolijejember.ListKamar" />
+        <activity android:name="com.example.kospolijejember.listkos.ListActivity" />
+        <activity android:name="com.example.kospolijejember.FormBuktiPending_activity" />
+        <activity android:name="com.example.kospolijejember.checkout_activity" />
+        <activity
+            android:name="com.example.kospolijejember.MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity android:name="com.example.kospolijejember.FormBukti_activity" />
+        <activity android:name="com.example.kospolijejember.Notatransaksi_activity" />
+        <activity android:name="com.example.kospolijejember.Formsewa_activity" />
+        <activity android:name="com.example.kospolijejember.Detailkos_activity" />
+        <activity android:name="com.example.kospolijejember.BerandaActivity" />
+        <activity android:name="com.example.kospolijejember.RegisterActivity" />
+        <activity android:name="com.example.kospolijejember.MainActivity" />
+        <activity android:name="com.example.kospolijejember.LoginActivity" />
+        <activity android:name="com.example.kospolijejember.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
