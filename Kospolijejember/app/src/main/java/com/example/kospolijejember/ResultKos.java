@@ -37,7 +37,7 @@ import java.util.Map;
 public class ResultKos extends AppCompatActivity {
 
     private Spinner sp_kecamatan;
-    private String[] list = {"-Pilih-","Semua","Kuta Selatan","Kuta Utara","Petang","Abiansemal","Kuta","Mengwi"};
+    private String[] list = {"-Pilih-","Semua","Ajung","Jenggawah","Kaliwates","Patrang","Rambipuji","Sumbesari"};
     RecyclerView mRecyclerView;
     RecyclerView.Adapter mAdapter;
     RecyclerView.LayoutManager layoutManager;
