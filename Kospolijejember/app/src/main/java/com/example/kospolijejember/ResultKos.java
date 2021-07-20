@@ -73,7 +73,7 @@ public class ResultKos extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 tv_kecamatan.setText(list[i]);
                 Skecamatan = tv_kecamatan.getText().toString().trim();
-                if(tv_kecamatan.getText().toString().equals("Kuta Selatan")) {
+                if(tv_kecamatan.getText().toString().equals("Ajung")) {
                     pd.setMessage("Memuat Data Kos" + Skecamatan);
                     pd.setCancelable(false);
                     pd.show();
@@ -81,7 +81,7 @@ public class ResultKos extends AppCompatActivity {
                     intent.putExtra("kecamatan",Skecamatan);
                     startActivity(intent);
                     finish();
-                }else if (tv_kecamatan.getText().toString().equals("Kuta Utara")){
+                }else if (tv_kecamatan.getText().toString().equals("Jenggawah")){
                     pd.setMessage("Memuat Data Kos"+Skecamatan);
                     pd.setCancelable(false);
                     pd.show();
@@ -89,7 +89,7 @@ public class ResultKos extends AppCompatActivity {
                     intent.putExtra("kecamatan",Skecamatan);
                     startActivity(intent);
                     finish();
-                }else if (tv_kecamatan.getText().toString().equals("Petang")){
+                }else if (tv_kecamatan.getText().toString().equals("Kaliwates")){
                     pd.setMessage("Memuat Data Kos"+Skecamatan);
                     pd.setCancelable(false);
                     pd.show();
@@ -97,7 +97,7 @@ public class ResultKos extends AppCompatActivity {
                     intent.putExtra("kecamatan",Skecamatan);
                     startActivity(intent);
                     finish();
-                }else if (tv_kecamatan.getText().toString().equals("Abiansemal")){
+                }else if (tv_kecamatan.getText().toString().equals("Patrang")){
                     pd.setMessage("Memuat Data Kos"+Skecamatan);
                     pd.setCancelable(false);
                     pd.show();
@@ -105,7 +105,7 @@ public class ResultKos extends AppCompatActivity {
                     intent.putExtra("kecamatan",Skecamatan);
                     startActivity(intent);
                     finish();
-                }else if (tv_kecamatan.getText().toString().equals("Kuta")){
+                }else if (tv_kecamatan.getText().toString().equals("Rambipuji")){
                     pd.setMessage("Memuat Data Kos"+Skecamatan);
                     pd.setCancelable(false);
                     pd.show();
@@ -113,7 +113,7 @@ public class ResultKos extends AppCompatActivity {
                     intent.putExtra("kecamatan",Skecamatan);
                     startActivity(intent);
                     finish();
-                }else if (tv_kecamatan.getText().toString().equals("Mengwi")){
+                }else if (tv_kecamatan.getText().toString().equals("Sumbesari")){
                     pd.setMessage("Memuat Data Kos"+Skecamatan);
                     pd.setCancelable(false);
                     pd.show();
