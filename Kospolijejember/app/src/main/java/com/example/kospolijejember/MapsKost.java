@@ -60,7 +60,7 @@ public class MapsKost extends FragmentActivity implements OnMapReadyCallback {
 
         dropdown = findViewById(R.id.spinner1);
 
-        String[] items = new String[]{"Lokasi Anda", "Kuta Utara", "Kuta Selatan", "Kuta", "Abiansemal", "Petang", "Mengwi"};
+        String[] items = new String[]{"Lokasi Anda", "Ajung", "Jenggawah", "Kaliwates", "Patrang", "Rambipuji", "Sumbesari"};
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, items);
         dropdown.setAdapter(adapter);
         
@@ -72,22 +72,22 @@ public class MapsKost extends FragmentActivity implements OnMapReadyCallback {
                         getKostArround();
                         break;
                     case 1:
-                        getKostByDistricts("Kuta Utara");
+                        getKostByDistricts("Ajung");
                         break;
                     case 2:
-                        getKostByDistricts("Kuta Selatan");
+                        getKostByDistricts("Jenggawah");
                         break;
                     case 3:
-                        getKostByDistricts("Kuta");
+                        getKostByDistricts("Kaliwates");
                         break;
                     case 4:
-                        getKostByDistricts("Abiansemal");
+                        getKostByDistricts("Patrang");
                         break;
                     case 5:
-                        getKostByDistricts("Petang");
+                        getKostByDistricts("Rambipuji");
                         break;
                     case 6:
-                        getKostByDistricts("Mengwi");
+                        getKostByDistricts("Sumbesari");
                         break;
 
                 }
